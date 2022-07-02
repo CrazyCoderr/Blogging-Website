@@ -145,8 +145,10 @@ body {
 
 /* Section */
 
-.section-slider, .section-posts{
-    align-items: center ;
-    padding: 9.6rem 0 ;
-    background-color: wheat;
+.section-slider{
+    background: wheat;
+}
+
+.section-slider p, .section-posts p{
+    font-size: 3.2rem;
 }

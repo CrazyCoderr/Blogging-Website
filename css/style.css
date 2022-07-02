@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    background-color: black;
+    color: aliceblue;
+}
+
+.header {
+    padding: 0 2rem;
+    height: 10rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(255, 255, 255);
+}
+
+.header .logo {
+    padding: 1rem;
+    height: auto;
+}
+
+.navbar-list {
+    padding: 2.5rem;
+    display: flex;
+    gap: 4.8rem;
+    list-style: none;
+}
+
+.navbar-link:link,
+.navbar-link:visited {
+
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 500;
+    color: black;
+    transition: all 0.3s;
+}
+
+.navbar-link:hover,
+.navbar-link:active {
+    color: blue;
+}
+
+.mob-nav-icon {
+    padding: 2.5rem;
+    width: 4rem;
+    height: 4rem;
+    color: black;
+}
+
+.mob-nav{
+    display: none;
+    background: transparent;
+    cursor: pointer;
+}
+.mob-nav-icon[name="close-sharp"] {
+    display: none;
+}
+
+
+@media(max-width: 62em) {
+    .mob-nav{
+        display: block;
+    }   
+    .navbar{
+        display: none;
+         
+    }
+};

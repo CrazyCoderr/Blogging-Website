@@ -1,3 +1,18 @@
+$(document).ready(function () {
+
+    $('.owl-carousel').owlCarousel({
+        loop: true,
+        margin: 100,
+        nav: true,
+        items: 1,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        animateOut:'fadeOut'
+    })
+
+}
+)
+
 
 "use strict";
 
@@ -9,16 +24,3 @@ const toggleNavbar = () => {
 }
 
 mobi_nav.addEventListener('click', () => toggleNavbar());
-
-
-$(document).ready(function () {
-
-    $('.owl-carousel').owlCarousel({
-        loop: true,
-        margin: 10,
-        nav: true,
-        items: 1
-    })
-
-}
-)

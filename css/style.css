@@ -91,7 +91,6 @@ body {
 
 
 .section-slider .owl-carousel .item .slider {
-    width: 100%;
     opacity: 1;
     background-color: #71c5ee;
     box-shadow: 0 3px 5px rgba(0, 0, 0, alpha0.3);
@@ -122,11 +121,11 @@ body {
 .owl-carousel .item .slider .content .title {
     font-weight: 600;
     font-size: 22px;
-    color: #333;
+    color: #222;
     text-transform: capitalize;
 }
 
-.owl-carousel .owl-stage-outer .owl-stage .owl-item .item .slider .content .title:hover {
+.owl-carousel .item .slider .content .title:hover {
     text-decoration: underline;
 }
 
@@ -143,6 +142,7 @@ body {
 
 .owl-carousel .item .slider .content .rm:hover {
     color: #333;
+    text-decoration: underline;
 }
 
 
@@ -202,7 +202,6 @@ body {
     }
 
     .section-slider  .owl-carousel .item .slider {
-        width: 100%;
         opacity: 1;
         background-color: #71c5ee;
         box-shadow: 0 3px 5px rgba(0, 0, 0, alpha0.3);
@@ -235,7 +234,7 @@ body {
     }
 
     .section-slider  .owl-carousel .item  .slider {
-        width: 100%;
+       
         opacity: 1;
         background-color: #71c5ee;
         box-shadow: 0 3px 5px rgba(0, 0, 0, alpha0.3);

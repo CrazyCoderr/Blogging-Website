@@ -33,7 +33,11 @@ body {
     display: flex;
     justify-content: space-between;
     background-color: #025091;
-    z-index: 99;      
+    z-index: 99;
+}
+
+h1{
+    padding: 1rem 2rem;
 }
 
 .wrapper .logo {
@@ -90,13 +94,14 @@ body {
 
 
 
-.section-slider .owl-carousel .item .slider {
-    opacity: 1;
-    background-color: #71c5ee;
-    box-shadow: 0 3px 5px rgba(0, 0, 0, alpha0.3);
-    border-radius: 10px;
-    margin: 1rem 1rem;
-    display: flex;
+.owl-carousel .item .slider
+{
+opacity: 1;
+background-color: #71c5ee;
+box-shadow: 0 3px 5px rgba(0, 0, 0, alpha0.3);
+border-radius: 10px;
+margin: 1rem 1rem;
+display: flex;
 
 }
 
@@ -118,7 +123,7 @@ body {
 
 }
 
-.owl-carousel .item .slider .content .title {
+.owl-carousel .item .slider .content .title, h1{
     font-weight: 600;
     font-size: 22px;
     color: #222;
@@ -201,7 +206,7 @@ body {
         display: none;
     }
 
-    .section-slider  .owl-carousel .item .slider {
+     .owl-carousel .item .slider {
         opacity: 1;
         background-color: #71c5ee;
         box-shadow: 0 3px 5px rgba(0, 0, 0, alpha0.3);
@@ -233,8 +238,8 @@ body {
         width: 60%;
     }
 
-    .section-slider  .owl-carousel .item  .slider {
-       
+     .owl-carousel .item .slider {
+
         opacity: 1;
         background-color: #71c5ee;
         box-shadow: 0 3px 5px rgba(0, 0, 0, alpha0.3);

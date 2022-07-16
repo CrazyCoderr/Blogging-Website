@@ -16,9 +16,10 @@ mobi_nav.addEventListener('click', () => toggleNavbar());
 
 $(document).ready(function () {
 
-    $('.owl-carousel').owlCarousel({
+    $('.owl-one').owlCarousel({
         loop: true,
         margin: 15,
+        dots: false,
         items: 1,
         autoplay: true,
         autoplayTimeout: 3000,
@@ -26,6 +27,15 @@ $(document).ready(function () {
         animateOut: 'slideOutDown',
         animateIn: 'flipInX'
         
+    });
+
+    $('.owl-two').owlCarousel({
+        loop: true,
+        items:1,
+        margin: 15,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        autoplayHoverPause: true,
     });
 
 }

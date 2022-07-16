@@ -23,9 +23,10 @@ $(document).ready(function () {
         autoplay: true,
         autoplayTimeout: 3000,
         autoplayHoverPause: true,
-        animateIn:'flipInX',
-        animateOut:'slideOutDown'
-    })
+        animateOut: 'slideOutDown',
+        animateIn: 'flipInX'
+        
+    });
 
 }
-)
+);

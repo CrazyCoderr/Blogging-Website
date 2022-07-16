@@ -21,21 +21,24 @@ body {
     overflow: hidden;
     align-items: center;
     justify-content: center;
+    margin-top: 11rem;
 }
 
 
 
-.header {
+.header .wrapper {
+    position: fixed;
+    top: 0em;
     padding: 0 2rem;
     height: 10rem;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     background-color: rgb(255, 255, 255);
-    z-index: 1;     
-    
+    z-index: 99;      
 }
 
-.header .logo {
+.wrapper .logo {
     padding: 1rem;
     height: auto;
 }
@@ -87,22 +90,16 @@ body {
 /****************** SLIDER ********************/
 
 
-.section-slider {
-    margin-top: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+
 
 .section-slider .owl-carousel .item .slider {
     width: 100%;
     opacity: 1;
-    background-color: rgb(160, 37, 37);
+    background-color: red;
     box-shadow: 0 3px 5px rgba(0, 0, 0, alpha0.3);
-    border-radius: 20px;
+    border-radius: 10px;
     margin: 1rem 1rem;
     display: flex;
-    flex-direction: row;
 
 }
 
@@ -142,7 +139,7 @@ body {
 }
 
 .owl-carousel .item .slider .content .rm {
-    color: tomato;
+    color: red;
 
 }
 
@@ -231,11 +228,11 @@ body {
 
 @media(max-width: 35em) {
 
-    .header {
+    .wrapper {
         padding: 0 2.4rem;
     }
 
-    .header .logo {
+    .wrapper .logo {
         width: 60%;
     }
 

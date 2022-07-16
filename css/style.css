@@ -31,7 +31,8 @@ body {
     display: flex;
     justify-content: space-between;
     background-color: rgb(255, 255, 255);
-
+    z-index: 1;     
+    
 }
 
 .header .logo {
@@ -63,9 +64,6 @@ body {
     color: blue;
 }
 
-.header {
-    position: relative;
-}
 
 .mob-nav-icon {
     padding: 4rem;
@@ -151,10 +149,6 @@ body {
 .owl-carousel .item .slider .content .rm:hover {
     color: #333;
 }
-
-
-
-
 
 
 

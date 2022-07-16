@@ -2,11 +2,12 @@ $(document).ready(function () {
 
     $('.owl-carousel').owlCarousel({
         loop: true,
-        margin: 100,
+        margin: 15,
         items: 1,
         autoplay: true,
         autoplayTimeout: 3000,
-        animateOut:'fadeOut'
+        animateIn:'flipInX',
+        animateOut:'slideOutDown'
     })
 
 }

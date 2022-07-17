@@ -36,12 +36,12 @@ body {
     z-index: 99;
 }
 
-h1{
+h1 {
     padding: 1rem 2rem;
     text-align: center;
 }
 
-.owl-carousel{
+.owl-carousel {
     display: inline-block;
 }
 
@@ -93,20 +93,63 @@ h1{
 }
 
 
+.dropdown {
+    float: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.dropdown .dropbtn {
+    border: none;
+    outline: none;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.dropdown-content {
+    display: none;
+    margin: 4rem;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    
+}
+
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+    color: blue;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
 
 /****************** SLIDER ********************/
 
 
 
 
-.owl-carousel .item .slider
-{
-opacity: 1;
-background-color: #71c5ee;
-box-shadow: 0 3px 5px rgba(0, 0, 0, alpha0.3);
-border-radius: 10px;
-margin: 1rem 1rem;
-display: flex;
+.owl-carousel .item .slider {
+    opacity: 1;
+    background-color: #71c5ee;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, alpha0.3);
+    border-radius: 10px;
+    margin: 1rem 1rem;
+    display: flex;
 
 }
 
@@ -128,7 +171,8 @@ display: flex;
 
 }
 
-.owl-carousel .item .slider .content .title, h1{
+.owl-carousel .item .slider .content .title,
+h1 {
     font-weight: 600;
     font-size: 22px;
     color: #222;
@@ -159,15 +203,15 @@ display: flex;
 
 /****************** Footer ********************/
 
-footer{
+footer {
     background-color: #025091;
     height: 5rem;
     text-align: center;
 }
 
-.footer h1{
+.footer h1 {
     color: crimson;
-    text-transform: uppercase ;
+    text-transform: uppercase;
     font-size: medium;
 }
 
@@ -222,7 +266,19 @@ footer{
         display: none;
     }
 
-     .owl-carousel .item .slider {
+    .dropdown-content {
+        position: relative;
+        margin: 20px;
+        text-align: center;
+        width: 100vh;
+    }
+
+    .dropdown .dropbtn {
+        display: block;
+        width: 100%;
+    }
+
+    .owl-carousel .item .slider {
         opacity: 1;
         background-color: #71c5ee;
         box-shadow: 0 3px 5px rgba(0, 0, 0, alpha0.3);
@@ -254,7 +310,7 @@ footer{
         width: 60%;
     }
 
-     .owl-carousel .item .slider {
+    .owl-carousel .item .slider {
 
         opacity: 1;
         background-color: #71c5ee;

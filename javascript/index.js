@@ -36,6 +36,18 @@ $(document).ready(function () {
         autoplay: true,
         autoplayTimeout: 3000,
         autoplayHoverPause: true,
+        Responsive:
+        {
+            0:{
+                items: 1
+            },
+            480:{
+                items: 2
+            },
+            769:{
+                items: 3
+            }
+        }
     });
 
 }

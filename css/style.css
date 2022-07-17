@@ -157,8 +157,19 @@ display: flex;
 
 
 
+/****************** Footer ********************/
 
+footer{
+    background-color: #025091;
+    height: 5rem;
+    text-align: center;
+}
 
+.footer h1{
+    color: crimson;
+    text-transform: uppercase ;
+    font-size: medium;
+}
 
 
 

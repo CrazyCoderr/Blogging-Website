@@ -24,24 +24,35 @@
 
     <header class="header  ">
 
+
         <div class="wrapper">
 
-            <img src="images/logo.png" alt="Till Now logo" class="logo">
+            <div class="fl">
+                <img src="images/logo.png" alt="Till Now logo" class="logo">
+
+                <div class="searchBox">
+                    <input class="searchInput" type="text" name="" placeholder="Search">
+                    <button class="searchButton" href="#">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </div>
+            </div>
+
 
             <nav class="navbar">
                 <ul class="navbar-list">
                     <li><a class="navbar-link" href="#">Home</a></li>
-                    <li><div class="dropdown">
-                        <button class="dropbtn"><a class="navbar-link" href="#">Category</a>
-                        </button>
-                        <div class="dropdown-content">
-                            <a class="navbar-link" href="#">National</a> <br>
-                            <a class="navbar-link" href="#">International</a> <br>
-                            <a class="navbar-link" href="#">Sports</a> <br>
-                            <a class="navbar-link" href="#">Finance</a> <br>
-                            <a class="navbar-link" href="#">Tech</a> <br>
-                          </div>
-                          </div>
+                    <li>
+                        <div class="dropdown">
+                            <a class="navbar-link dropbtn" href="#">Category</a>
+                            <div class="dropdown-content">
+                                <a class="navbar-link" href="#">National</a>
+                                <a class="navbar-link" href="#">International</a>
+                                <a class="navbar-link" href="#">Sports</a>
+                                <a class="navbar-link" href="#">Finance</a>
+                                <a class="navbar-link" href="#">Tech</a>
+                            </div>
+                        </div>
                     </li>
                     <li><a class="navbar-link" href="#">About Us</a></li>
                     <li><a class="navbar-link" href="#">Contact Us</a></li>
@@ -63,7 +74,7 @@
 
     <section class="section-slider">
 
-        <h1> <br><br> Latest <br></h1>
+        <h1> <br><a href="#" class="title"> Latest </a><br></h1>
         <div class="owl-one owl-carousel owl-theme">
 
             <div class="item">
@@ -145,7 +156,7 @@
 
             <div class="national">
 
-                <h1> <br><br> National<br></h1>
+                <h1> <br><br><a href="#" class="title"> National </a><br></h1>
 
                 <div class=" owl-two owl-carousel owl-theme">
 
@@ -220,11 +231,11 @@
                 </div>
             </div>
 
-             <!-----------------------------------International News------------------------------------>
+            <!-----------------------------------International News------------------------------------>
 
             <div class="International">
 
-                <h1> <br><br> International<br></h1>
+                <h1> <br><br> <a href="#" class="title">International</a><br></h1>
 
                 <div class=" owl-two owl-carousel owl-theme">
 
@@ -303,7 +314,7 @@
 
             <div class="Sports">
 
-                <h1> <br><br> Sports<br></h1>
+                <h1> <br><br> <a href="#" class="title">Sports</a><br></h1>
 
                 <div class=" owl-two owl-carousel owl-theme">
 
@@ -382,7 +393,7 @@
 
             <div class="Finance">
 
-                <h1> <br><br> Finance<br></h1>
+                <h1> <br><br><a href="#" class="title">Finance</a><br></h1>
 
                 <div class=" owl-two owl-carousel owl-theme">
 
@@ -461,7 +472,7 @@
 
             <div class="Tech">
 
-                <h1> <br><br> Tech<br></h1>
+                <h1> <br><br><a href="#" class="title">Tech</a><br></h1>
 
                 <div class=" owl-two owl-carousel owl-theme">
 
@@ -545,10 +556,12 @@
     <!-------------------------------------------------Footer------------------------------------------------->
     <footer>
         <div class="footer">
-            <p><h1> &copy; Till now 2022</h1> </p>
+            <p>
+            <h1> &copy; Till now 2022</h1>
+            </p>
         </div>
     </footer>
-    
+
 
 
     <!--JavaScript-->

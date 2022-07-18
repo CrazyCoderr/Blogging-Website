@@ -39,22 +39,85 @@ body {
 h1 {
     padding: 1rem 2rem;
     text-align: center;
+    text-transform: uppercase;
 }
 
 .owl-carousel {
     display: inline-block;
 }
 
-.wrapper .logo {
-    padding: 1rem;
-    height: auto;
+
+/******************** Search Bar  *******************/
+
+
+.fl{
+    display: flex;
 }
 
+.searchBox {
+    background: #71c5ee;
+    height: 44px;
+    border-radius: 40px;
+    padding: 2px 2px;
+    margin-top: 3.5rem;
+    margin-left: 5rem;
+    display: flex;
+}
+
+.searchBox:hover > .searchInput {
+    width: 100%;
+    transition: 0.5s;
+}
+
+.searchBox:hover > .searchButton {
+  background: white;
+  color : black;
+    width: 45px;
+}
+
+.searchButton {
+    color: black;
+    float: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #71c5ee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+}
+
+.searchInput {
+    border:none;
+    background: none;
+    outline:none;
+    float:left;
+    padding: 0;
+    color: black;
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 40px;
+    width: 0px;
+
+}
+
+
+/***************** LOGO ****************/
+
+
+.wrapper .fl .logo {
+    padding: 1rem;
+}
+
+
+/***************************** Nav Bar *********************/
 .navbar-list {
-    padding: 4rem;
+    padding: 4.5rem;
     display: flex;
     gap: 4.8rem;
     list-style: none;
+    position: relative;
 }
 
 .navbar-link:link,
@@ -76,7 +139,7 @@ h1 {
 
 
 .mob-nav-icon {
-    padding: 4rem;
+    margin: 4rem;
     width: 4rem;
     height: 4rem;
     color: black;
@@ -94,26 +157,24 @@ h1 {
 
 
 .dropdown {
-    float: center;
-    overflow: hidden;
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    position:relative;
 }
 
 .dropdown .dropbtn {
-    border: none;
-    outline: none;
     background-color: inherit;
     font-family: inherit;
-    margin: 0;
+    text-align: center;
 }
 
 .dropdown-content {
     display: none;
-    margin: 4rem;
-    background-color: #f9f9f9;
-    min-width: 160px;
+    margin: 3rem;
+    background-color: #025091;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     text-align: center;
+    list-style: none;
     z-index: 1;
 }
 
@@ -121,10 +182,6 @@ h1 {
     float: none;
     color: black;
     padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    width: 100%;
-    
 }
 
 
@@ -134,13 +191,27 @@ h1 {
 }
 
 .dropdown:hover .dropdown-content {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
 }
 
 
 /****************** SLIDER ********************/
 
 
+
+.title
+{
+    font-weight: 600;
+    font-size: 22px;
+    color: #222;
+    text-transform: uppercase;
+}
+
+.title:hover {
+    text-decoration: underline;
+}
 
 
 .owl-carousel .item .slider {
@@ -199,6 +270,21 @@ h1 {
     text-decoration: underline;
 }
 
+.owl-two .item .slider {
+    flex-direction: column;
+    opacity: 1;
+    background-color: #71c5ee;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, alpha0.3);
+    border-radius: 20px;
+    margin: 1rem 1rem;
+}
+
+.owl-two .item .slider img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    padding: 1rem 1rem;
+}
 
 
 /****************** Footer ********************/
@@ -293,6 +379,10 @@ footer {
         width: 100%;
         object-fit: cover;
         padding: 1rem 1rem;
+    }
+
+    .searchBox {
+        margin-left: 1rem;
     }
 
 

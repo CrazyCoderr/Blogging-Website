@@ -14,6 +14,8 @@ mobi_nav.addEventListener('click', () => toggleNavbar());
 
 
 
+
+
 $(document).ready(function () {
 
     $('.owl-one').owlCarousel({
